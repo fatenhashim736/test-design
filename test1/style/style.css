@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    background-image: url(../style/image/mall.jpg);
+    background-size: cover;
+    box-shadow: -10px -10px 20px black;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #106e6887;
+    background-size: cover;
+}
+
+.curve {
+    padding-left: 355px;
+    z-index: 4;
+}
+
+.curve svg {
+    height: 610px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 390px;
+    height: 346px;
+    padding: 10px;
+    right: 135px;
+    z-index: 5;
+}
+
+.welcome {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.logintext,
+.email,
+.password,
+.forget,
+.login,
+.signup {
+    padding-bottom: 20px;
+    color: #0000006e;
+}
+
+.email,
+.password {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px;
+}
+
+.email .icon,
+.password .icon {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 13px;
+    text-align: center;
+    color: #00000029;
+}
+
+.email .mail,
+.password .pass {
+    height: 30px;
+    width: 270px;
+    border-radius: 20px;
+    margin: 5px;
+    border-color: #00000029;
+    margin-left: 33px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.forget {
+    padding-right: 18px;
+    text-align: right;
+}
+
+.forget a {
+    color: #00000054;
+    font-size: small;
+    font-weight: 300;
+}
+
+.login .log {
+    width: 130px;
+    height: 35px;
+    background-color: #0aa190bf;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    font-size: 15px;
+}
+
+.login .log:hover {
+    background-color: white;
+    color: #0aa190bf;
+    border: 1px solid #0aa190bf;
+}
+
+.signup p,
+.signup a {
+    color: #00000054;
+}
+
+.social i {
+    padding: 5px;
+    font-size: 20px;
+    color: #0000004d;
+}
+
+.social i:hover {
+    color: white !important;
+    background-color: #0aa1905c;
+}
